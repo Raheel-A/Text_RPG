@@ -26,6 +26,9 @@ public class Chara_Visible : MonoBehaviour
     public GameObject Menu_btn;
     public GameObject Heroes_Wanted_Img;
 
+    public EventManager eventManager; //Holds the chance variables for later
+    public ItemDatabase itemDatabase; //Holds the items and characteristics for the player
+
 
     //public bool HeroImgOn;
     //public bool HerotxtOn;
@@ -154,6 +157,9 @@ public class Chara_Visible : MonoBehaviour
         Drunkard_btn.SetActive(true);
 
         Heroes_Wanted_Img.SetActive(false);
+
+
+        eventManager.maxChance = itemDatabase.drunkardHoney;
     }
 
     public void CharaSelect()

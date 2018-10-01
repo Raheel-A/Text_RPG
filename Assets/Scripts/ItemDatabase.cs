@@ -9,7 +9,13 @@ public class ItemDatabase : MonoBehaviour {
     public bool hasWand = false;
     public bool hasKey = false;
     public bool hasHoney = false;
+
     public int moneyAmount = 0;
+    public int charaHealth = 100;
+
+    //Probabilities
+    public int normalHoney = 25;
+    public int drunkardHoney = 75;
 
     public void getSword()
     {

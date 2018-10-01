@@ -189,7 +189,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 443213547}
-        m_MethodName: attemptHoney
+        m_MethodName: honeyCheck
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -417,6 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDatabase: {fileID: 0}
+  maxChance: 0
 --- !u!4 &443213548
 Transform:
   m_ObjectHideFlags: 0
@@ -462,6 +463,10 @@ MonoBehaviour:
   hasWand: 0
   hasKey: 0
   hasHoney: 0
+  moneyAmount: 0
+  charaHealth: 100
+  normalHoney: 25
+  drunkardHoney: 75
 --- !u!4 &1008753005
 Transform:
   m_ObjectHideFlags: 0
